@@ -916,3 +916,166 @@
   letter-spacing: 0;
   margin:0;
 }
+
+.contact__letter-fold-top{
+  background-color:rgb(244, 244, 245);
+  padding:4.5em 0em;
+}
+
+.contact__letter-title{
+  position:relative;
+  font-size:2rem;
+  letter-spacing:0.18em;
+  line-height:0.7;
+  margin:0;
+  text-align:center;
+  text-transform:uppercase;
+}
+
+.contact__letter-accent{
+  font-size:0.68rem;
+  letter-spacing:0.2em;
+}
+
+.contact__letter-title::after{
+  position:absolute;
+  content:"";
+  width:11%;
+  height:0.8px;
+  background-color:rgba(24, 24, 27);
+  left:50%;
+  transform:translateX(-50%);
+  bottom:-23px;
+}
+
+.contact__letter-body,
+.contact__letter-signature,
+.contact__success{
+  padding:2em 0em;
+}
+
+.contact__letter-intro,
+.contact__letter-message,
+.contact__letter-ending,
+.contact__user-signature,
+.contact__letter-username,
+.contact__success-title,
+.contact__success-text{
+  margin:0;
+}
+
+.contact__letter-intro{
+  font-size:1.125rem;
+  font-weight:500;
+  line-height:1.5;
+  letter-spacing:0.02em
+}
+
+.contact__letter-message{
+  font-size:1rem;
+  font-weight:400;
+  line-height:1.7;
+  color: #444444;
+  width:100%;
+  max-width:100%;
+  overflow-wrap:break-word;
+}
+
+.contact__letter-ending{
+  font-size:1.1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing:0.01em;
+  color: #5A5A5A;
+}
+
+.contact__letter-username{
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #2A2A2A;
+  text-transform:uppercase;
+}
+
+.contact__user-signature{
+  font-family:Allura, cursive;
+  font-size:2.5rem;
+}
+
+.contact__envelope-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.contact__success-title{
+  font-size:2.5rem;
+  font-weight:600;
+  text-align:center;
+  letter-spacing:-0.02em;
+}
+
+.contact__success-text{
+  font-size:1rem;
+  font-weight:400;
+  text-align:center;
+  color: #5A5A5A;
+  line-height:1.6;
+}
+
+.contact__success-btn{
+  background-color:rgb(24, 24, 27);
+  color:#fff;
+  border:none;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  padding:1em 3em;
+  border-radius:999px;
+}
+
+.contact__envelope-back{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  border-radius:10px;
+  background-color:#F3EBDF;
+  border:1px solid rgba(24, 24, 27, 0.12);
+} 
+
+.contact__envelope-front{
+  position:absolute;
+  inset:0;
+  background:#E8DAC8;
+  clip-path:polygon(
+    0 100%,
+    0 30%,
+    50% 55%,
+    100% 30%,
+    100% 100%
+  );
+  z-index:2;
+}
+
+.contact__envelope-flap{
+  opacity:0;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:300px;
+  clip-path:polygon(
+    0 0,
+    50% 45%,
+    100% 0
+  );
+  background-color: #EEE2D1;
+  border-radius:10px;
+  z-index:3;
+}
+
+.error-msg-style{
+  color:#DC2626;
+}

@@ -22,6 +22,26 @@
     }
 }
 
+@media (min-width:420px) {
+    .contact__envelope-flap{
+        clip-path:polygon(
+            0 0,
+            50% 60%,
+            100% 0
+        );
+    }
+}
+
+@media (min-width:530px) {
+    .contact__envelope-flap{
+        clip-path:polygon(
+            0 0,
+            50% 70%,
+            100% 0
+        );
+    }
+}
+
 @media(hover: hover){
     .product-card__cart-btn{
         opacity:0;
@@ -99,6 +119,14 @@
     .contact__btn-wrapper,
     .contact__btn{
         cursor:pointer;
+    }
+
+    .contact__envelope-flap{
+        clip-path:polygon(
+            0 0,
+            50% 60%,
+            100% 0
+        );
     }
 }
 
@@ -354,8 +382,29 @@
     .contact__form-title{ 
         top:-21.5px;
     }
+
+    .contact__envelope-flap{
+        clip-path:polygon(
+            0 0,
+            50% 75%,
+            100% 0
+        );
+    }
 }
 
+@media (min-width:700px) {
+    .contact__envelope-flap{
+        clip-path:polygon(
+            0 0,
+            50% 90%,
+            100% 0
+        );
+    }
+
+    .animation-stage{
+        height:700px;
+    }
+}
 
 @media(min-width:800px){
     .header-section__primary-nav{
@@ -655,10 +704,24 @@
         font-size:.75rem;
     }
 
-    .contact__form-wrapper{
-        width:100%;
+    .contact__form-wrapper,
+    .contact__letter,
+    .contact__success,
+    .contact__envelope{
+        max-width:800px;
+    }
+
+    .animation-stage{
         max-width:800px;
         margin:0 auto;
+    }
+
+    .contact__envelope-flap{
+        clip-path:polygon(
+            0 0,
+            50% 100%,
+            100% 0
+        );
     }
 
 }

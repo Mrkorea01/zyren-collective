@@ -220,40 +220,120 @@
             </p>
         </div>
 
-        <div class="contact__form-wrapper">
-            <form class="contact__form">
-                <h2 class="contact__form-title">Your letter</h2>
 
-                <div class="contact__field-wrapper">
-                    <div class="contact__field">
-                        <label for="user-first-name" class="contact__input-label">First Name</label>
-                        <input id="user-first-name" type="name" name="firstName" minlength="3" required>
+        <div class="animation-stage">
+            <div class="contact__form-wrapper">
+                <form class="contact__form">
+                    <h2 class="contact__form-title">Your letter</h2>
+
+                    <div class="contact__field-wrapper">
+                        <div class="contact__field">
+                            <label for="user-first-name" class="contact__input-label">First Name</label>
+                            <input id="user-first-name" type="name" name="firstName">
+                            <p class="name-error-msg error-msg-style"></p>
+                            <p class="name-char-error-msg error-msg-style"></p>
+                            <p class="name-letter-error-msg error-msg-style"></p>
+                        </div>
+
+                        <div class="contact__field">
+                            <label for="user-last-name" class="contact__input-label">Last Name</label>
+                            <input id="user-last-name" type="name" name="lastName">
+                            <p class="last-name-error-msg error-msg-style"></p>
+                            <p class="last-name-char-error-msg error-msg-style"></p>
+                            <p class="last-name-letter-error-msg error-msg-style"></p>
+                        </div>
+
+                        <div class="contact__field">
+                            <label for="user-email" class="contact__input-label">E-mail</label>
+                            <input id="user-email" type="email" name="userEmail">
+                            <p class="email-validation-error-msg error-msg-style"></p>
+                        </div>
+
+                        <div class="contact__field">
+                            <label for="user-message" class="contact__input-label">Your Message</label>
+                            <textarea id="user-message" placeholder="Write your letter..." name="userMessage"></textarea>
+                            <p class="user-error-msg error-msg-style"></p>
+                            <p class="user-min-error-msg error-msg-style"></p>
+                            <p class="user-max-error-msg error-msg-style"></p>
+                        </div>
                     </div>
 
-                    <div class="contact__field">
-                        <label for="user-last-name" class="contact__input-label">Last Name</label>
-                        <input id="user-last-name" type="name" name="lastName" minlength="3" required>
+                    <div class="contact__btn-wrapper">
+                        <button class="contact__btn" type="submit">
+                            <span class="contact__btn-txt">Send Letter</span>
+                            <span class="dot">.</span>
+                            <span class="dot">.</span>
+                            <span class="dot">.</span>
+                        </button>
                     </div>
 
-                    <div class="contact__field">
-                        <label for="user-email" class="contact__input-label">E-mail</label>
-                        <input id="user-email" type="email" name="userEmail" required>
-                    </div>
-
-                    <div class="contact__field">
-                        <label for="user-message" class="contact__input-label">Your Message</label>
-                        <textarea id="user-message" placeholder="Write your letter..." name="userMessage" required></textarea>
+                    <p class="contact__response-hr">We usually respond within 24-48 hours.</p>
+                </form>
+            </div>  
+            
+            <div class="contact__letter">
+                <div class="contact__letter-fold-top">
+                    <div class="contact__letter-header">
+                        <h2 class="contact__letter-title">Zyren <br><span class="contact__letter-accent">Collective</span></h2>
                     </div>
                 </div>
 
-                <div class="contact__btn-wrapper">
-                    <button class="contact__btn" type="submit">
-                        Send Letter
-                    </button>
+                <div class="contact__letter-middle-static">
+                    <div class="contact__letter-body">
+                        <p class="contact__letter-intro">Dear Zyren Collective,</p>
+                        <p class="contact__letter-message">
+                        </p>
+                    </div>
                 </div>
 
-                <p class="contact__response-hr">We usually respond within 24-48 hours.</p>
-            </form>
+                <div class="contact__letter-fold-bottom">
+                    <div class="contact__letter-signature">
+                        <p class="contact__letter-ending">With appreciation,</p>
+                        <p class="contact__user-signature"></p>
+                        <p class="contact__letter-username"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__envelope">
+                <div class="contact__envelope-back">
+
+                </div>
+
+                <div class="contact__envelope-front">
+
+                </div>
+
+                <div class="contact__envelope-flap">
+
+                </div>
+            </div>
+
+            <div class="contact__success">
+                <div class="contact__envelope-img-wrapper">
+                   <img src="assets/images/zyren-envelope-img.png" alt="Simple envelope with letter and checkmark" class="contact__envelope-img">
+                </div>
+
+                <div class="contact__success-content">
+                    <h2 class="contact__success-title">Thank You</h2>
+                    <div class="contact__success-text-wrapper">
+                        <p class="contact__success-text">
+                            Your letter
+                            is now in our hands.
+                        </p>
+                        <p class="contact__success-text">
+                            We'll reply within
+                            24–48 hours.
+                        </p>
+                    </div>
+                    <div class="contact__success-btn-wrapper">
+                        <a href="index.html" class="contact__success-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M11 7L6 12L11 17" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span class="contact__success-btn-text">Back to home</span>
+                        </a>
+                    </div> 
+                </div>   
+            </div>
         </div>    
     </section>
 
@@ -342,19 +422,14 @@
 
 
 <!-- ──────────────
+Thank you. 
 
 Your letter
 is now in our hands.
 
-We appreciate the time
-you took to write us.
-
-Every message is read
-with intention.
-
 We'll reply within
 24–48 hours.
 
-— Zyren Atelier
+<btn>Back to home</btn>
 
 ────────────── -->
