@@ -1,5 +1,5 @@
-import {products} from './data.js';
-import { renderProducts } from './renderproduct.js';
+import {products} from '../data/data.js';
+import { renderProducts } from '../reusable-components/renderproduct.js';
 import '../reusable-components/header.js';
 
 
@@ -44,8 +44,3 @@ filterBtn.addEventListener('click', () => {
 filterPanelClose.addEventListener('click', () => {
     filters.classList.remove('is-active');
 })
-
-
-
-
-

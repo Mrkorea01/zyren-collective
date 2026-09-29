@@ -6,7 +6,7 @@ export function renderProducts(productArray, container) {
         <div class="product-card__container">
                 <div class="product-card__img-wrapper">
                     <img class="product-card__img" src="${product.img}" alt="${product.imageAlt}">
-                    <button type="button" class="product-card__cart-btn">
+                    <button type="button" class="product-card__cart-btn"  data-product-id="${product.id}">
                         <span class="product-card__cart-btn-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" aria-hidden="true" fill="#e3e3e3"><path d="M444-144v-300H144v-72h300v-300h72v300h300v72H516v300h-72Z"/></svg></span>
                         <span class="product-card__cart-btn-text">Add to Cart</span>
                     </button>
@@ -34,3 +34,5 @@ export function renderProducts(productArray, container) {
         `
     })
 }
+
+
