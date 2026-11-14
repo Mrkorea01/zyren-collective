@@ -1,10 +1,7 @@
 import {products} from './data/data.js';
 import {renderProducts} from './reusable-components/renderproduct.js';
 import './reusable-components/header.js';
-import { addToCart } from './reusable-components/cart.js';
-import { cart } from './reusable-components/cart.js';
-
-
+import { addToCart, cart} from './reusable-components/cart.js';
 
 const bestSeller = products.filter(eachProduct => eachProduct.isBestSeller === true);
 renderProducts(bestSeller, document.querySelector('.best-sellers__product-grid'));
@@ -81,4 +78,5 @@ subscribeBtn.addEventListener('click', (event) => {
         updateButtonState();
     }, 2000);
 })
+
 

@@ -1,11 +1,13 @@
 import {products} from '../data/data.js';
 import { renderProducts } from '../reusable-components/renderproduct.js';
 import '../reusable-components/header.js';
-
+import { cart } from '../reusable-components/cart.js';
+import { addToCart } from '../reusable-components/cart.js';
 
 const container = document.querySelector('.shop-products__grid')
 renderProducts(products, container);
 
+addToCart();
 
 const productSortingsLabelBtn = document.querySelector('.product-sortings__label');
 const productSortingsLists = document.querySelector('.product-sortings__lists');

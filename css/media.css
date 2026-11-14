@@ -222,6 +222,7 @@
     .promotional-section__title,
     .testimonials-section__title,
     .wishlist__title,
+    .cart__title,
     .faq__title,
     .contact__title{
         font-size: 2.8rem;
@@ -755,6 +756,7 @@
     .promotional-section__title,
     .testimonials-section__title,
     .wishlist__title,
+    .cart__title,
     .faq__title,
     .contact__title{
         font-size: 4rem;

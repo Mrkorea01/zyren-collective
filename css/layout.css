@@ -296,7 +296,8 @@ body.menu-open{
 .lookbook__content-media,
 .wishlist,
 .faq,
-.contact{
+.contact,
+.cart{
     max-width:1280px;
     margin:0 auto;
     padding:5em 1.2em;
@@ -875,7 +876,9 @@ body.menu-open{
 .lookbook__text,
 .wishlist__item-count,
 .wishlist__empty-state-heading,
-.wishlist__supporting-text{
+.cart__empty-state-heading,
+.wishlist__supporting-text,
+.cart__empty-supporting-text{
     margin-top:0;
     margin-bottom:0;
 }
@@ -890,6 +893,7 @@ body.menu-open{
 
 .lookbook__img-wrapper,
 .wishlist__header,
+.cart__header,
 .faq__header,
 .faq__summary,
 .contact,
@@ -905,28 +909,32 @@ body.menu-open{
     margin-bottom:1rem;
 }
 
-.wishlist{
+.wishlist,
+.cart{
     border:none;
     width:100%;
     padding-bottom:4em;
 }
 
-.wishlist__header{
+.wishlist__header,
+.cart__header{
     margin-top:4em;
     gap:.5rem;
 }
 
-.wishlist__empty{
+.wishlist__empty,
+.cart__empty{
     display:flex;
     flex-direction:column;
-    gap:.5rem;
+    gap:.9rem;
     width:100%;
     background-color:rgb(255, 255, 255);
     margin-top:2.5em;
     padding:2.5em 1em;
 }
 
-.wishlist__love-icon{
+.wishlist__love-icon,
+.cart__icon{
     display:grid;
     place-items:center;
     margin-bottom:.7em;
@@ -938,14 +946,16 @@ body.menu-open{
     object-fit:contain;
 }
 
-.wishlist__shop-btn{
+.wishlist__shop-btn,
+.cart__shop-btn{
     padding: 0.9em 1.75em;
     margin-top:.35em;
 }
 
 .wishlist__shop-btn-wrapper,
 .contact__btn-wrapper,
-.contact__success-btn-wrapper{
+.contact__success-btn-wrapper,
+.cart__shop-btn-wrapper{
     display:flex;
     align-items:center;
     justify-content:center;
@@ -1317,4 +1327,62 @@ body.menu-open{
 
 .contact__success{
     pointer-events:auto;
+}
+
+.cart__empty{
+    gap:1rem;
+}
+
+.cart__summary-layout{
+    background-color:rgb(255, 255, 255);
+    margin-top:2.5em;
+    padding:2em 1em 3em 1em;
+}
+
+.cart__summary-header{
+    margin-top:0;
+    margin-bottom:1.8em;
+}
+
+.cart__summary-breakdown{
+    display:flex;
+    flex-direction:column;
+    gap:.9rem;
+}
+
+.cart__summary-row,
+.cart__summary-total{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:1em;
+    padding-bottom:1em;
+}
+
+.cart__summary-total{
+    margin-bottom:1.8em;
+    padding-bottom:0;
+}
+
+.cart__checkout-btn{
+    margin-bottom:2.3em;
+}
+
+.cart__promo-layout{
+    display:flex;
+    flex-direction:column;
+    gap:.75rem;
+    padding-top:1.5em;
+}
+
+.cart__promo-message{
+    display:none;
+    margin-top:.5em;
+    margin-bottom:0;
+}
+
+.promo-error-message,
+.promo-success-message{
+    display:block;
 }
